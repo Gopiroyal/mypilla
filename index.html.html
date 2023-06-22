@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ikkada kadamma, kinda chudu</title>
+  <style>
+    #message {
+      font-size: 27px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #foot{
+margin-top: 500px;
+margin-bottom: 100px;
+margin-left: 1200px;
+font-size: 20px;
+
+
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+
+  <script>
+    // Array of sorry messages
+    var sorryMessages = [
+      "Enti vedu apology letter rayamante idi chesadu anukuntunnava",
+      "i feel you deserve something unique, just like the way you are!",
+      "Oiii sorry nana",
+      "Vey, I'm sorry for my mistakes.",
+      "Please forgive me nana.",
+      "Nenu ninnu entha ibbandi pettano naku telusu and nuvvu tappa nannu evaru artam cheskoleru. Thank you so much for that.",
+      "I apologize for hurting you.",
+      "I seriously promise to do better.",
+      "I'm truly sorry.",
+      "nijanga sorry nana",
+      "I hope you can forgive me. Chestav kada ",
+      "I'll make it up to you.",
+      "Please accept my apologies.",
+      "sarle oka muddu pettu 😉",
+      "I'm deeply sorry for my actions."
+      
+    ];
+
+    
+
+    function displayRandomMessage() {
+      var messageContainer = document.getElementById("message");
+      var randomIndex = Math.floor(Math.random() * sorryMessages.length);
+      var randomMessage = sorryMessages[randomIndex];
+      messageContainer.textContent = randomMessage;
+    }
+
+    // Display a random sorry message initially
+    displayRandomMessage();
+
+    // Display a new random sorry message every 3 seconds
+    setInterval(displayRandomMessage, 3000);
+  </script>
+  <div id="foot"><footer> made for my pilla with ❤️</footer></div>
+</body>
+</html>
